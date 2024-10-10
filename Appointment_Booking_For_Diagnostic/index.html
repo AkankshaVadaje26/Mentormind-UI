@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Diagnostic Center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="labb.png" alt="Digital Diagnostic Center" class="logo">
+        <h1>Digital Diagnostic Center</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#lab-tests">Lab Tests</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Digital Diagnostic Center</h2>
+        <p>Your trusted platform for reliable and quick diagnostic tests. Book your tests with ease, from the comfort of
+            your home.</p>
+    </section>
+
+    <!-- Lab Tests Section -->
+    <section id="lab-tests">
+        <h2>Lab Tests Available</h2>
+        <div class="test-container">
+            <!-- Test 1 -->
+            <div class="test-card">
+                <img src="Blood-test.jpeg" alt="Blood-test">
+                <h3>Blood Test</h3>
+                <p>Price: ₹750</p>
+                <button onclick="bookTest('Blood Test')">Book Now</button>
+            </div>
+            <!-- Test 2 -->
+            <div class="test-card">
+                <img src="complete-urine-examination.jpg" alt="Urine-Test">
+                <h3>Urine Test</h3>
+                <p>Price: ₹800</p>
+                <button onclick="bookTest('Urine Test')">Book Now</button>
+            </div>
+            <!-- Test 3 -->
+            <div class="test-card">
+                <img src="Covid.jpeg" alt="Covid-Test">
+                <h3>Covid Test</h3>
+                <p>Price: ₹500</p>
+                <button onclick="bookTest('Covid Test')">Book Now</button>
+            </div>
+            <!-- Test 4 -->
+            <div class="test-card">
+                <img src="X-ray.jpeg" alt="X-ray Test">
+                <h3>X-ray Test</h3>
+                <p>Price: ₹700</p>
+                <button onclick="bookTest('X-ray Test')">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: chetan@gmail.com</p>
+        <p>Phone: +91 123456789</p>
+        <p>Address: Pune, India</p>
+
+        <h3>Follow Us</h3>
+        <div class="social-media">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="Instagram.jpeg" alt="Instagram" class="social-icon"> Instagram
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="Facebook.png" alt="Facebook" class="social-icon"> Facebook
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="Twitter.png" alt="X" class="social-icon"> X (formerly Twitter)
+            </a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p><strong>Digital Diagnostic Center</strong> is your trusted platform for quick, affordable, and accurate medical
+            tests. We bring state-of-the-art diagnostics to your doorstep, ensuring your health and time are
+            well-protected.</p>
+        <ul>
+            <li>Expert diagnostic professionals.</li>
+            <li>Quick, accurate results online.</li>
+            <li>Affordable pricing & home collection.</li>
+        </ul>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register">
+        <h2>Register</h2>
+        <form action="/register" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Digital Diagnostic Center. All rights reserved.</p>
+        <p><a href="#contact">Contact Us</a> | <a href="#about">About Us</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
